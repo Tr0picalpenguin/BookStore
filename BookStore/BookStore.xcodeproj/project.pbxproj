@@ -15,6 +15,7 @@
 		ED9483FD282D9F4E0026E204 /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */; };
 		ED948400282DA75C0026E204 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */; };
 		ED948402282DABEB0026E204 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED948401282DABEB0026E204 /* BookDetailViewController.swift */; };
+		ED948404282DB82C0026E204 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED948403282DB82C0026E204 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
 		ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		ED948401282DABEB0026E204 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		ED948403282DB82C0026E204 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		ED9483F8282D9E570026E204 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED948403282DB82C0026E204 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				ED948400282DA75C0026E204 /* BookTableViewCell.swift in Sources */,
 				419B178027987EBC00423A18 /* AppDelegate.swift in Sources */,
+				ED948404282DB82C0026E204 /* Book.swift in Sources */,
 				419B178227987EBC00423A18 /* SceneDelegate.swift in Sources */,
 				ED9483FD282D9F4E0026E204 /* BookListTableViewController.swift in Sources */,
 				ED948402282DABEB0026E204 /* BookDetailViewController.swift in Sources */,
