@@ -14,6 +14,7 @@
 		419B178C27987EBE00423A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419B178A27987EBE00423A18 /* LaunchScreen.storyboard */; };
 		ED9483FD282D9F4E0026E204 /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */; };
 		ED948400282DA75C0026E204 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */; };
+		ED948402282DABEB0026E204 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED948401282DABEB0026E204 /* BookDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		419B178D27987EBE00423A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
 		ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		ED948401282DABEB0026E204 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				ED9483FE282DA69A0026E204 /* Subviews */,
 				ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */,
+				ED948401282DABEB0026E204 /* BookDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				419B178027987EBC00423A18 /* AppDelegate.swift in Sources */,
 				419B178227987EBC00423A18 /* SceneDelegate.swift in Sources */,
 				ED9483FD282D9F4E0026E204 /* BookListTableViewController.swift in Sources */,
+				ED948402282DABEB0026E204 /* BookDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
