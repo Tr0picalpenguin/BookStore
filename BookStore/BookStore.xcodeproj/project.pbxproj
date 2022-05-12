@@ -13,6 +13,7 @@
 		419B178927987EBE00423A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419B178827987EBE00423A18 /* Assets.xcassets */; };
 		419B178C27987EBE00423A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419B178A27987EBE00423A18 /* LaunchScreen.storyboard */; };
 		ED9483FD282D9F4E0026E204 /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */; };
+		ED948400282DA75C0026E204 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		419B178B27987EBE00423A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419B178D27987EBE00423A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
+		ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		ED9483FA282D9E9C0026E204 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED9483FE282DA69A0026E204 /* Subviews */,
 				ED9483FC282D9F4D0026E204 /* BookListTableViewController.swift */,
 			);
 			path = Controllers;
@@ -105,6 +108,14 @@
 			children = (
 			);
 			path = "Helper Files";
+			sourceTree = "<group>";
+		};
+		ED9483FE282DA69A0026E204 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				ED9483FF282DA75C0026E204 /* BookTableViewCell.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED948400282DA75C0026E204 /* BookTableViewCell.swift in Sources */,
 				419B178027987EBC00423A18 /* AppDelegate.swift in Sources */,
 				419B178227987EBC00423A18 /* SceneDelegate.swift in Sources */,
 				ED9483FD282D9F4E0026E204 /* BookListTableViewController.swift in Sources */,
