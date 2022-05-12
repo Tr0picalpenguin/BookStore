@@ -8,11 +8,23 @@
 import UIKit
 
 class BookDetailViewController: UIViewController {
-
+ 
+    @IBOutlet weak var introLabel: UILabel!
+    @IBOutlet weak var bookPhoto: UIImageView!
+    @IBOutlet weak var bookTitleTextField: UITextField!
+    @IBOutlet weak var bookAuthorTextField: UITextField!
+    @IBOutlet weak var bookRatingTextField: UITextField!
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func clearButtonTapped(_ sender: Any) {
+    }
+    @IBAction func saveButtonTapped(_ sender: Any) {
     }
     
 
