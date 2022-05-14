@@ -33,7 +33,6 @@ class BookDetailViewController: UIViewController {
            bookSynopsisTextField.text = book.synopsis
        }
     
- 
     func resetView() {
         bookTitleTextField.text = ""
         bookAuthorTextField.text = ""
@@ -41,12 +40,10 @@ class BookDetailViewController: UIViewController {
         bookSynopsisTextField.text = ""
     }
         
-    
-
-    
     @IBAction func clearButtonTapped(_ sender: Any) {
         resetView()
     }
+    
     @IBAction func saveButtonTapped(_ sender: Any) {
         guard let title = bookTitleTextField.text,
                      let author = bookAuthorTextField.text,
@@ -62,16 +59,4 @@ class BookDetailViewController: UIViewController {
                }
                navigationController?.popViewController(animated: true)
            }
-           
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+} // End of Class

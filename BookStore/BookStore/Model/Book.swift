@@ -21,7 +21,7 @@ class Book {
         self.rating = rating
         self.synopsis = synopsis
     }
-} // End of class.
+} // End of Class.
     
     extension Book: Equatable {
         static func == (lhs: Book, rhs: Book) -> Bool {

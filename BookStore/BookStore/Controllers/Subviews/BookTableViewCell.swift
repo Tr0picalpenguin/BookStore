@@ -18,4 +18,4 @@ class BookTableViewCell: UITableViewCell {
         bookAuthorLabel.text = book.author
         bookRatingLabel.text = String(book.rating)
     }
-}
+} // End of Class
