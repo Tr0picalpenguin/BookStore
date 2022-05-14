@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qh2-dd-m25" customClass="BookTableViewCell" customModule="BookStore" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="Qh2-dd-m25" customClass="BookTableViewCell" customModule="BookStore" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="53.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qh2-dd-m25" id="STT-NO-QOU">
@@ -62,7 +62,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="9Ql-oJ-7NB" kind="show" id="1C3-zg-OpY"/>
+                                    <outlet property="bookAuthorLabel" destination="Sig-ih-5cd" id="OCU-aV-Vk4"/>
+                                    <outlet property="bookRatingLabel" destination="azQ-p6-glR" id="L4h-gY-O4Z"/>
+                                    <outlet property="bookTitleLabel" destination="Kya-Ba-18e" id="cZw-bL-0WQ"/>
+                                    <segue destination="9Ql-oJ-7NB" kind="show" identifier="toDetailVC" id="1C3-zg-OpY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -88,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell us about this book..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DA9-bw-j8s">
-                                <rect key="frame" x="8" y="96" width="398" height="30"/>
+                                <rect key="frame" x="79.5" y="96" width="255.5" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,12 +115,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TEW-MY-jqF">
                                         <rect key="frame" x="0.0" y="42" width="394" height="34"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Imi-f7-pSq">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Imi-f7-pSq">
                                                 <rect key="frame" x="0.0" y="0.0" width="278.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CgS-h0-xa8">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Rating" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CgS-h0-xa8">
                                                 <rect key="frame" x="286.5" y="0.0" width="107.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -165,9 +168,9 @@
                             <constraint firstItem="Jq7-YQ-7vu" firstAttribute="centerX" secondItem="rxm-5z-2ae" secondAttribute="centerX" id="nTl-jn-DpZ"/>
                             <constraint firstItem="rxm-5z-2ae" firstAttribute="bottom" secondItem="agN-Ak-h0i" secondAttribute="bottom" constant="10" id="q89-X5-yaE"/>
                             <constraint firstItem="agN-Ak-h0i" firstAttribute="top" secondItem="yzE-NS-XTD" secondAttribute="bottom" constant="8" id="qya-SO-Ax5"/>
-                            <constraint firstItem="DA9-bw-j8s" firstAttribute="leading" secondItem="rxm-5z-2ae" secondAttribute="leading" constant="8" id="rxc-6a-RrZ"/>
+                            <constraint firstItem="DA9-bw-j8s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rxm-5z-2ae" secondAttribute="leading" id="rxc-6a-RrZ"/>
                             <constraint firstItem="rxm-5z-2ae" firstAttribute="trailing" secondItem="agN-Ak-h0i" secondAttribute="trailing" constant="10" id="vkO-qp-6oP"/>
-                            <constraint firstItem="rxm-5z-2ae" firstAttribute="trailing" secondItem="DA9-bw-j8s" secondAttribute="trailing" constant="8" id="x0H-CX-gad"/>
+                            <constraint firstItem="rxm-5z-2ae" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DA9-bw-j8s" secondAttribute="trailing" id="x0H-CX-gad"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

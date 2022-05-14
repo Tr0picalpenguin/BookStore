@@ -15,12 +15,20 @@ class BookDetailViewController: UIViewController {
     @IBOutlet weak var bookAuthorTextField: UITextField!
     @IBOutlet weak var bookRatingTextField: UITextField!
   
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
+    
+    var bookReceiver: Book?
+    
+   
+    
+   // Need the update views function!
+    
+        
+    }
+
     
     @IBAction func clearButtonTapped(_ sender: Any) {
     }
