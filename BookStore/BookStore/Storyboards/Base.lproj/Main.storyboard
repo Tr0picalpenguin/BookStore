@@ -75,7 +75,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="jN4-UC-KtW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="lnt-aZ-kVW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lnt-aZ-kVW">
+                            <connections>
+                                <segue destination="9Ql-oJ-7NB" kind="show" id="qAo-AR-CaE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8g9-Jt-CCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -144,7 +148,7 @@
                                     <constraint firstAttribute="height" constant="44" id="95y-wm-7yR"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                <buttonConfiguration key="configuration" style="plain" title="Clear">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -183,16 +187,11 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="authorTextField" destination="Imi-f7-pSq" id="GN5-Oc-1Us"/>
                         <outlet property="bookAuthorTextField" destination="Imi-f7-pSq" id="0su-lq-7G8"/>
-                        <outlet property="bookPhoto" destination="Jq7-YQ-7vu" id="MmP-sq-n3f"/>
                         <outlet property="bookRatingTextField" destination="CgS-h0-xa8" id="5as-SR-4lS"/>
+                        <outlet property="bookSynopsisTextField" destination="yzE-NS-XTD" id="tca-Mx-xUd"/>
                         <outlet property="bookTitleTextField" destination="kOt-LT-7Oo" id="2MY-cB-DRZ"/>
-                        <outlet property="clearButton" destination="agN-Ak-h0i" id="nKM-km-H2d"/>
-                        <outlet property="enterTitleTextField" destination="kOt-LT-7Oo" id="90d-TU-HE8"/>
-                        <outlet property="introLabel" destination="DA9-bw-j8s" id="qPy-Y8-trZ"/>
-                        <outlet property="ratingTextField" destination="CgS-h0-xa8" id="Kx6-cZ-eX8"/>
-                        <outlet property="titleTextField" destination="kOt-LT-7Oo" id="tD8-lv-W9S"/>
+                        <outlet property="clearButton" destination="agN-Ak-h0i" id="dcV-nd-1D9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pO5-S3-z6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -218,6 +217,9 @@
             <point key="canvasLocation" x="-468.11594202898556" y="-18.080357142857142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qAo-AR-CaE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="photo" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">

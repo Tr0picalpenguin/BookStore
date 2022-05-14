@@ -16,8 +16,6 @@ class BookTableViewCell: UITableViewCell {
     func updateViews(for book: Book) {
         bookTitleLabel.text = book.title
         bookAuthorLabel.text = book.author
-        bookRatingLabel.text = book.rating.stringValue()
-        
-        
+        bookRatingLabel.text = String(book.rating)
     }
 }
